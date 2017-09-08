@@ -1,0 +1,134 @@
+<!-- 
+    Psychic Game index.html
+    Bo Slott
+    September 2017
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, inital-scale=1" />
+
+  <!-- reset all styles -->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+
+  <!-- Bootstrap ver 3.3.7 CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+  <!-- Psychic Game style sheet -->
+  <link rel="stylesheet" href="assets/css/psy-styles.css" />
+
+  <title>Psychic Game | Bo's Bo-Nanza</title>
+
+</head>
+<body>
+  
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><span class="logo">Bo-Nanza</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Rock Paper Scissors</a></li>
+              <li><a href="#">Psychic Game</a></li>
+              <li><a href="#">Hangman Game</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    
+    <div class="row game-options-buttons-bar">
+      <div class="game-options-button col-sm-2 col-sm-offset-3">
+        <button>Letters</button>
+      </div>
+      <div class="game-options-button col-sm-2">
+       <button>Numbers</button>
+      </div>
+      <div class="game-options-button col-sm-2">
+        <button>Symbols</button>
+      </div>
+    </div>
+
+    <section class="row game-play">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="row game-play-header">
+          <p id=""></p>
+
+            <!--
+                use JS to change the header to reflect the game the user has chosen to play
+                give the p tag an id
+            -->
+
+        </div>
+
+        <div class="row game-play-instructions">
+          <p>Choose a Letter</p>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-1">
+            <div class="row">
+              <p>You Chose:</p>
+            </div>
+            <div class="row">
+              <p>Computer Chose:</p>
+            </div>
+          </div>
+          <div class="col-sm-5 col-sm-offset-1">
+            <div class="row">
+              <p id=""></p>       <!-- Add id -->
+            </div>
+            <div class="row">
+              <p id=""></p>       <!-- Add id -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+  </div>
+
+
+
+
+
+
+<!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Bootstrap javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Rock Paper Scissors Game javascript sheet -->
+  <script src="assets/javascript/rps-game.js"></script>
+
+
+</body>
+</html>

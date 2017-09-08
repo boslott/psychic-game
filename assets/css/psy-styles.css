@@ -1,0 +1,43 @@
+/*
+  Psychic Game styles.css
+  Bo Slott
+  September 2017
+*/
+
+/* Typography */
+
+
+/* Structure */
+
+body {
+  padding-top: 100px;
+}
+
+  /* Site Header */
+
+    .logo {
+
+    }
+
+  /* Site Content */
+
+    .game-options-buttons-bar {
+      border-style: solid;
+      border-color: #efefef;
+      border-bottom-width: 1px;
+      text-align: center;
+    }
+
+    .game-options-button {
+      padding-bottom: 20px;
+    }
+
+    .game-play-instructions {
+      text-align: center;
+    }
+
+  /* Site Footer */
+
+
+
+/* General Use */
