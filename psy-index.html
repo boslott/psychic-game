@@ -61,49 +61,64 @@
   <div class="container">
     
     <div class="row game-options-buttons-bar">
-      <div class="game-options-button col-sm-2 col-sm-offset-3">
-        <button>Letters</button>
+      <div class="game-options-button col-sm-4">
+        <button id="letters-button">Letters</button>
       </div>
-      <div class="game-options-button col-sm-2">
-       <button>Numbers</button>
+      <div class="game-options-button col-sm-4">
+       <button id="numbers-button">Numbers</button>
       </div>
-      <div class="game-options-button col-sm-2">
-        <button>Symbols</button>
+      <div class="game-options-button col-sm-4">
+        <button id="symbols-button">Symbols</button>
       </div>
     </div>
 
-    <section class="row game-play">
-      <div class="col-sm-8 col-sm-offset-2">
-        <div class="row game-play-header">
-          <p id=""></p>
+    <section class="row outer-gameboard-container hidden" id="outer-gameboard">
 
-            <!--
-                use JS to change the header to reflect the game the user has chosen to play
-                give the p tag an id
-            -->
+      <header class="row gameplay-header">
+        <h1><span id="gameplay-header-text"></span>
+      </header>
 
+      <div class="row gameplay-body">
+        
+        <div class="row gameplay-instructions">
+          <h2>Choose Your Guess</h2>
         </div>
 
-        <div class="row game-play-instructions">
-          <p>Choose a Letter</p>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-5 col-sm-offset-1">
-            <div class="row">
-              <p>You Chose:</p>
-            </div>
-            <div class="row">
-              <p>Computer Chose:</p>
-            </div>
+        <div class="row gameplay-user-choice">
+          <div class="col-sm-4 col-sm-offset-2 gameplay-user-choice-text">
+            <h2>Your Choice:</h2>
           </div>
-          <div class="col-sm-5 col-sm-offset-1">
-            <div class="row">
-              <p id=""></p>       <!-- Add id -->
-            </div>
-            <div class="row">
-              <p id=""></p>       <!-- Add id -->
-            </div>
+          <div class="col-sm-3 gameplay-user-choice-letter">
+            <p><span id="userLetter"></span></p>
+          </div>
+        </div>
+
+        <div class="row gameplay-yesNo-banner">
+          <p><span id="yesNo"></span></p>
+        </div>
+
+        <div class="row gameplay-already-guessed-text">
+          <h2>You Have Already Guessed These Letters:</h2>
+        </div>
+
+        <div class="row gameplay-already-guessed-letters">
+          <p><span id="userGuess0"></span></p>
+          <p><span id="userGuess1"></span></p>
+          <p><span id="userGuess2"></span></p>
+          <p><span id="userGuess3"></span></p>
+          <p><span id="userGuess4"></span></p>
+          <p><span id="userGuess5"></span></p>
+          <p><span id="userGuess6"></span></p>
+          <p><span id="userGuess7"></span></p>
+          <p><span id="userGuess8"></span></p>
+        </div>
+
+        <div class="row gameplay-guesses-remaining">
+          <div class="col-sm-6 gameplay-guesses-remaining-text">
+            <h2>Your Remaining Guesses:</h2>
+          </div>
+          <div class="col-sm-2 gameplay-guesses-remaining-number">
+            <p><span id="guessesLeft"></span></p>
           </div>
         </div>
 
@@ -111,11 +126,15 @@
 
     </section>
 
-
-
   </div>
 
+  <footer class="site-footer">
 
+    <div>
+      <h2>&copy; Copyright 2017 Bo Slott</h2>
+    </div>
+
+  </footer>
 
 
 
@@ -126,8 +145,8 @@
   <!-- Bootstrap javascript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <!-- Rock Paper Scissors Game javascript sheet -->
-  <script src="assets/javascript/rps-game.js"></script>
+  <!-- Psychic Game javascript sheet -->
+  <script src="assets/javascript/psy-game.js"></script>
 
 
 </body>

@@ -10,7 +10,7 @@
 /* Structure */
 
 body {
-  padding-top: 100px;
+  padding: 60px 0 100px;
 }
 
   /* Site Header */
@@ -28,16 +28,157 @@ body {
       text-align: center;
     }
 
-    .game-options-button {
-      padding-bottom: 20px;
-    }
+      .game-options-button {
+        padding: 20px;
+      }
 
-    .game-play-instructions {
-      text-align: center;
-    }
+      /* Gameboard */
+
+        .gameplay-header {
+          margin-top: 10px;
+        }
+
+        .gameplay-header h1 {
+          width: 30%;
+          margin: 10px auto;
+          padding: 10px 0;
+          color: purple;
+          font-size: 36px;
+          text-align: center;
+          border-style: solid;
+          border-color: purple;
+          border-width: 2px;
+          border-radius: 4px;
+        }
+
+        .gameplay-body {
+          border-style: solid;
+          border-color: purple;
+          border-width: 2px;
+          border-radius: 10px;
+          margin-bottom: 30px;
+        }
+
+        .gameplay-instructions h2 {
+          text-align: center;
+          font-size: 28px;
+          color: purple;
+          padding-top: 10px;
+        }
+
+        .gameplay-user-choice {
+          width: 60%;
+          margin: 0 auto;
+          padding: 20px;
+          border-style: solid;
+          border-color: purple;
+          border-width: 1px;
+          background-color: #efefef;
+        }
+
+        .gameplay-user-choice-text {
+          text-align: center;
+          color: purple;
+        }
+
+        .gameplay-user-choice-text h2 {
+          font-size: 24px;
+          white-space: nowrap;
+        }
+
+        .gameplay-user-choice-letter p {
+          width: 50px;
+          height: 50px;
+          background-color: #efefef;
+          margin: 10px 0 0 10px;
+          border-style: solid;
+          border-color: purple;
+          border-width: 1px;
+          color: purple;
+          text-align: center;
+          font-size: 30px;
+          font-weight: bold;
+        }
+
+        .gameplay-already-guessed-text {
+          text-align: center;
+          color: purple;
+          padding: 20px;
+        }
+
+        .gameplay-already-guessed-text h2 {
+          font-size: 24px;
+        }
+
+        .gameplay-already-guessed-letters {
+          display: flex;
+          justify-content: center;
+        }
+
+        .gameplay-already-guessed-letters p {
+          width: 50px;
+          height: 50px;
+          background-color: #efefef;
+          margin: 10px 0 0 10px;
+          border-style: solid;
+          border-color: purple;
+          border-width: 1px;
+          color: purple;
+          text-align: center;
+          font-size: 30px;
+          font-weight: bold;
+        }
+
+        .gameplay-guesses-remaining {
+          padding: 20px 0;
+        }
+
+        .gameplay-guesses-remaining-text {
+          text-align: center;
+        }
+
+        .gameplay-guesses-remaining-text h2 {
+          white-space: nowrap;
+          font-size: 24px;
+          color: purple;
+        }
+
+        .gameplay-guesses-remaining-number p {
+          width: 50px;
+          height: 50px;
+          background-color: #efefef;
+          margin: 10px 0 0 10px;
+          border-style: solid;
+          border-color: purple;
+          border-width: 1px;
+          color: purple;
+          text-align: center;
+          font-size: 30px;
+          font-weight: bold;
+        }
 
   /* Site Footer */
 
+    .site-footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #efefef;
+      border-style: solid;
+      border-color: #purple;
+      border-width: 1px 0 0;
+      color: purple;
+      text-align: center;
+      padding-bottom: 10px;
+    }
 
 
-/* General Use */
+
+    .site-footer h2 {
+      font-size: 12px;
+    }
+
+
+
+/* General Use 
