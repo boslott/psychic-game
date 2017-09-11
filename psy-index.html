@@ -8,7 +8,7 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, inital-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- reset all styles -->
   <link rel="stylesheet" href="assets/css/reset.css" />
@@ -58,6 +58,8 @@
     </div><!-- /.container-fluid -->
   </nav>
 
+  <img src="assets/images/gypsyEyesClosed2.png" alt="Crystal Ball Gypsy Background Image" class="bg-img" />
+
   <div class="container">
     
     <div class="row game-options-buttons-bar">
@@ -93,24 +95,24 @@
           </div>
         </div>
 
-        <div class="row gameplay-yesNo-banner">
-          <p><span id="yesNo"></span></p>
+         <div class="row game-over-banner hidden" id="gameEnd">
+          <p>Good Game! I was thinking of <span id="compGuess"></span></p>
+          <button id="againButton">Play Again</button>
+        </div>
+
+        <div class="row gameplay-yesNo-banner hidden" id="yesNoBox-no">
+          <p><span id="yesNo-no"></span></p>
+        </div>
+
+        <div class="row gameplay-yesNo-banner hidden" id="yesNoBox-yes">
+          <p><span id="yesNo-yes"></span></p>
         </div>
 
         <div class="row gameplay-already-guessed-text">
-          <h2>You Have Already Guessed These Letters:</h2>
+          <h2>You Have Already Guessed:</h2>
         </div>
 
-        <div class="row gameplay-already-guessed-letters">
-          <p><span id="userGuess0"></span></p>
-          <p><span id="userGuess1"></span></p>
-          <p><span id="userGuess2"></span></p>
-          <p><span id="userGuess3"></span></p>
-          <p><span id="userGuess4"></span></p>
-          <p><span id="userGuess5"></span></p>
-          <p><span id="userGuess6"></span></p>
-          <p><span id="userGuess7"></span></p>
-          <p><span id="userGuess8"></span></p>
+        <div class="row gameplay-already-guessed-letters" id="userGuessBoxes">
         </div>
 
         <div class="row gameplay-guesses-remaining">
@@ -122,11 +124,26 @@
           </div>
         </div>
 
+        <div class="row totals">
+          <h2>Total Wins:</h2>
+          <p><span id="wins"></span></p>
+        </div>
+        <div class="row totals">
+          <h2>Total Losses:</h2>
+          <p><span id="losses"></span></p>
+        </div>
+        <div class="row totals">
+          <h2>Total Games:</h2>
+          <p><span id="games"></span></p>
+        </div>
+
       </div>
 
     </section>
 
   </div>
+
+  
 
   <footer class="site-footer">
 

@@ -11,6 +11,25 @@
 
 body {
   padding: 60px 0 100px;
+  position: relative;
+}
+
+.bg-img {
+  position: fixed;
+  left: 0;
+  top: 20%;
+  z-index: -1;
+}
+
+.gypsy-win img {
+  margin: auto auto;
+  position: fixed;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  top: auto;
+  z-index: 9999;
+
 }
 
   /* Site Header */
@@ -100,6 +119,46 @@ body {
           font-weight: bold;
         }
 
+        .game-over-banner {
+          width: 50%;
+          padding: 20px;
+          background-color: blue;
+          text-align: center;
+          margin: 0 auto;
+        }
+
+        .game-over-banner p {
+          color: #fff;
+          font-size: 24px;
+        }
+
+        .game-over-banner button {
+          color: #fff;
+          font-size: 24px;
+        }
+
+        #compGuess {
+          color: #fff;
+          font-size: 24px;
+        }
+
+        #yesNoBox-no {
+          text-align:center;
+          padding: 20px;
+          width: 33%;
+          margin: 10px auto;
+          background-color: #efefef;
+        }
+
+        #yesNoBox-yes {
+          text-align: center;
+          padding: 20px;
+          width: 33%
+          margin: 30px auto;
+          background-color: green;
+          color: #fff;
+        }
+
         .gameplay-already-guessed-text {
           text-align: center;
           color: purple;
@@ -155,6 +214,31 @@ body {
           text-align: center;
           font-size: 30px;
           font-weight: bold;
+        }
+
+        .totals {
+          display: flex;
+          justify-content: flex-end;
+          padding: 0 50px 20px;
+        }
+
+        .totals h2 {
+          font-size: 24px;
+          color: purple;
+        }
+
+        .totals p {
+          width: 50px;
+          height: 50px;
+          background-color: #efefef;
+          margin: 10px 0 0 10px;
+          border-style: solid;
+          border-color: purple;
+          border-width: 1px;
+          color: purple;
+          text-align: center;
+          font-size: 30px;
+          font-weight: bold;          
         }
 
   /* Site Footer */
